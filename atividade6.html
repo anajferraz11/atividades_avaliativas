@@ -11,10 +11,10 @@
     <div id="resultado"></div>
 
     <script>
-        function checarCtegoria(){
+        function checarCategoria(){
             // toUpperCase muda a letra minuscula por maiuscula
             let categoria = prompt("Digite a categoria da sua habilitação").toUpperCase();
-            let nome = prompt("Digite su nome:");
+            let nome = prompt("Digite seu nome:");
 
             let tipoVeiculo = "";
             switch(categoria) {
@@ -39,7 +39,7 @@
                     break;    
             }
             document.getElementById("resultado").innerHTML = `
-            ${noem}, você pode dirigir: ${tipoVeiculo}.
+            ${nome}, você pode dirigir: ${tipoVeiculo}.
             `;
 
         }
